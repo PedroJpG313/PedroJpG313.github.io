@@ -1,0 +1,198 @@
+/* --- Variables y Reset Básico --- */
+:root {
+    --bg-color: #0f172a;
+    --bg-card: #1e293b;
+    --text-color: #f8fafc;
+    --text-muted: #94a3b8;
+    --accent-color: #38bdf8;
+    --accent-hover: #0ea5e9;
+    --transition: all 0.3s ease;
+}
+.link{
+
+    color: #0ea5e9;
+
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* --- Contenedor general --- */
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* --- Header & Navegación --- */
+header {
+    background-color: rgba(15, 23, 42, 0.9);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px solid #334155;
+    padding: 1rem 0;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.logo span {
+    color: var(--accent-color);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--text-muted);
+    transition: var(--transition);
+}
+
+.nav-links a:hover {
+    color: var(--accent-color);
+}
+
+/* --- Hero Section --- */
+.Presentación {
+    padding: 6rem 0;
+    text-align: center;
+}
+
+.Presentación-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.highlight {
+    color: var(--accent-color);
+}
+
+.Presentación-content p {
+    color: var(--text-muted);
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto 2rem auto;
+}
+
+
+/* --- Botones --- */
+.btn {
+    display: inline-block;
+    background-color: var(--accent-color);
+    color: var(--bg-color);
+    padding: 0.75rem 1.5rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: var(--transition);
+}
+
+.btn:hover {
+    background-color: var(--accent-hover);
+    transform: translateY(-2px);
+}
+
+/* --- Secciones Generales --- */
+.Mi {
+    padding: 4rem 0;
+}
+
+.Mi h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.Mi-text {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 1.1rem;
+}
+
+/* --- Proyectos Grid --- */
+.proyectos-class {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.proyectos-cuadros {
+    background-color: var(--bg-card);
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid #334155;
+    transition: var(--transition);
+}
+
+.proyecto-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent-color);
+}
+
+.proyecto-card h3 {
+    margin-bottom: 0.75rem;
+}
+
+.proyect-card p {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    margin-bottom: 1.25rem;
+}
+
+.proyecto-link {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    display: flex;
+    justify-content: center; /* Centra el enlace horizontalmente */
+    align-items: center;
+
+
+}
+
+.proyecto-link:hover {
+    text-decoration: underline;
+}
+
+/* --- Footer --- */
+footer {
+    text-align: center;
+    padding: 2rem 0;
+    border-top: 1px solid #334155;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+.text-center {
+    text-align: center;
+}
